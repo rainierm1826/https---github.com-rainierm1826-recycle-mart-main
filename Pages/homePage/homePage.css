@@ -1,0 +1,237 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px;
+    font-family: "lato";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    background: whitesmoke;
+    position: sticky;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: sticky;
+    top: 20px;
+
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    gap: 60px;
+}
+
+.nav button {
+    border: none;
+    font-weight: bold;
+    background-color: none;
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+
+.buttons{
+    display: flex;
+    gap: 30px;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    margin: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main img{
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: auto;
+}
+
+.main button{
+    border: none;
+    font-weight: bold;
+    background-color: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: scroll;
+  }
+  
+.sign-up-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    animation: scaleUp 0.3s ease;
+    border-radius: 20px;
+
+}
+
+.sign-up-username, .sign-up-password{
+    display: flex;
+    flex-direction: column;
+}
+  
+.close-sign-up, .close-sign-in{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close-sign-up:hover, .close-sign-up:focus, .close-sign-in:hover, .close-sign-in:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "poppins";
+    row-gap: 30px;
+}
+
+.form-control input {
+    border-radius: 5px;
+}
+
+.form-control label {
+    font-weight: bold;
+}
+
+.form-control button {
+    border: none;
+    background-color: #4d925f;
+    border-radius: 10px;
+    padding: 10px;
+    color:  #fefefe;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.sign-in-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    animation: scaleUp 0.3s ease;
+    border-radius: 20px;
+}
+
+.input-control {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 30px;
+    
+}
+
+@keyframes scaleUp {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+}
+
+.errors{
+    color: red;
+    font-size: small;
+
+}
+
+#response{
+    color: #4d925f;
+    font-weight: bold;
+}
+
+.invalid-account{
+    color: red;
+    font-size: small;
+}
+.pikachu{
+    display: flex;
+    flex-direction: column;
+}
+
+.services-container {
+    margin: 20px;
+    font-family: "poppins";
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.services-title{
+    text-align: center;
+}
+
+
+
+.cards-control{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cards{
+    width: calc(25% - 20px);
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px gray;
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #4d925f;
+    padding: 20px;
+    color: #fefefe;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    margin: 0; /* Remove any default margins */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+

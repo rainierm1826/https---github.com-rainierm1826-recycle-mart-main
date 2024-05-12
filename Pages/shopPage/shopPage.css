@@ -1,0 +1,208 @@
+body{
+    margin: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.nav h1 {
+    font-family: "lato", sans-serif;
+    font-weight: bold;
+}
+
+.nav {
+    background: whitesmoke;
+    position: sticky;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    font-family: "lato", sans-serif;
+    font-weight: bold;
+    gap: 30px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.form-control {
+    display: flex;
+    gap: 30px;
+
+}
+.search-bar {
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px gray;
+    border:none;
+    padding: 10px;
+    font-family: "lato";
+    font-size: small;
+    width: 50vh;
+}
+
+.search-bar::placeholder {
+    font-style: italic;
+    font-size: smaller;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.main img{
+    height: 100px;
+    width: 100%;
+}
+
+.shop-container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: flex-start;
+
+    
+}
+
+.image-container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-container{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+   width: 70%;
+}
+
+.product-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 10%;
+    box-shadow: 1px 1px 2px gray;
+    transition: 0.1s ease-in;
+    font-family: "lato";
+    background-color: rgb(211, 211, 211);
+
+}
+
+.product-items:hover{
+    transform: scale(1.1);
+    border: 2px solid blue;
+    box-shadow: none;
+}
+
+.product-items img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+.product-price{
+    font-size: small;
+}
+
+.product-details{
+    flex: 1;
+}
+
+.product-description{
+    font-size: small;
+}
+
+#modal-product-name, .modal-product-price{
+    font-weight: bold;
+}
+
+.modal {
+    display: none; 
+    position: absolute;
+    top: 0;
+    animation: slideInFromRight 0.3s ease forwards;
+    height: auto;
+
+}
+
+.modal img{
+    height: auto;
+    width: 30%;
+    object-fit: contain;
+}
+
+.buy-now{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+}
+
+.buy-now button {
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+
+.product-info-container {
+    background-color: #fefefe;
+    margin-right: 10px; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 70vh;
+    transform: translateX(100%);
+    animation: slideInFromRight 0.3s ease forwards;
+    font-family: "lato";
+    box-shadow: 1px 1px 2px gray;
+    border: none;
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%); 
+    }
+    to {
+        transform: translateX(50%);
+        margin-right: 20px;
+    }
+}
+
+
+
+
+span.close-modal-info {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+span.close-modal-info:hover, span.close-modal-info:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
